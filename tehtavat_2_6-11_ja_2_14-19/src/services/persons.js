@@ -16,7 +16,7 @@ const remove = (id) => {
 }
 
 const modify = (id, changedPerson) => {
-    return axios.post(`${url}/${id}`, changedPerson)
+    return axios.put(`${url}/${id}`, changedPerson)
 }
 
 export default { getAll, create, remove, modify };
